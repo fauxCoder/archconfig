@@ -23,3 +23,6 @@ let g:lightline = {
 set path+=**
 
 set number
+set tabstop=4
+set shiftwidth=4
+set expandtab
