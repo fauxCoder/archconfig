@@ -8,7 +8,8 @@ endif
 call plug#begin('~/.vim/plugged')
 
 Plug 'itchyny/lightline.vim'
-Plug 'https://github.com/junegunn/fzf'
+Plug 'junegunn/fzf'
+Plug 'Valloric/YouCompleteMe'
 
 call plug#end()
 
