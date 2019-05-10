@@ -2,11 +2,14 @@ import XMonad
 import XMonad.Hooks.EwmhDesktops
 import XMonad.Layout.Grid
 import XMonad.Layout.NoBorders (smartBorders)
+import XMonad.Layout.Spacing
+
 import qualified Data.Map as M
 
-myTerminal = "xterm -fg rgb:bc/ea/ff -bg rgb:22/22/22"
+myTerminal = "urxvt"
 myWorkspaces = ["1","2","3","4","5"]
-myLayout = smartBorders $ GridRatio (3/2) ||| Full
+mySpacing = spacingRaw True (Border 0 0 0 0) True (Border 4 4 4 4) True
+myLayout = smartBorders $ mySpacing $ GridRatio (3/2) ||| Full
 mykeys (XConfig {modMask = modm}) = M.fromList $ [
     ((modm, xK_p), spawn "dmenu_run -fn 'Inconsolata-14'") ]
 
