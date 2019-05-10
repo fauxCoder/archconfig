@@ -10,6 +10,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'itchyny/lightline.vim'
 Plug 'junegunn/fzf'
 Plug 'Valloric/YouCompleteMe'
+Plug 'ntpeters/vim-better-whitespace'
 
 call plug#end()
 

@@ -1,7 +1,19 @@
 Xcursor.theme: neutral
 
-URxvt.font: xft:Inconsolata Nerd Font:size=16:antialias=true
-URxvt.scrollBar: no
+URxvt*font: xft:Inconsolata Nerd Font:size=18
+URxvt*scrollBar: false
+URxvt*lineSpace: 2
+URxvt*saveLines: 8000
+URxvt*pointerBlank: true
+
+! Scrolling
+URxvt*scrollTtyKeypress:      true            ! scroll to bottom on keypress
+URxvt*scrollTtyOutput:        false           ! do not scroll to bottom on output
+
+! Transparency
+URxvt*inheritPixmap: true
+URxvt*transparent: true
+URxvt*shading: 12
 
 ! special
 *.foreground:   #c5c8c6
