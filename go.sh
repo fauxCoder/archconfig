@@ -1,21 +1,28 @@
 #!/bin/bash
 
 # I'm guessing you've got git already.
-# You'll need fish too.
 
 # Update
 pacman -Syu
 
 # Reqs.
 pacman -S \
-python \
-rust \
-vim \
-xmonad \
-xmonad-contrib
+    dmenu \
+    fish \
+    nerd-fonts-inconsolata \
+    python \
+    rust \
+    ttf-inconsolata \
+    vim \
+    xmonad \
+    xmonad-contrib \
+    xorg-server
 
 # Copy configs
 ./blow.fish
+
+# Install vim plugins
+vim +'PlugInstall --sync' +qa
 
 # YCM install
 pushd ~/.vim/plugged/YouCompleteMe/
