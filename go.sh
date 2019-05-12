@@ -9,7 +9,6 @@ pacman -Syu
 pacman -S \
     dmenu \
     fish \
-    nerd-fonts-inconsolata \
     python \
     rust \
     ttf-inconsolata \
@@ -17,6 +16,20 @@ pacman -S \
     xmonad \
     xmonad-contrib \
     xorg-server
+
+# AUR packages
+package_urls=(\
+    https://aur.archlinux.org/nerd-fonts-inconsolata.git \
+)
+
+mkdir -p ~/aur
+pushd ~/aur
+for p in "${package_urls[@]}"; do
+    git clone "$p" && pushd "$(basename "$p" .git)"
+    makepkg -sri
+    popd
+done
+popd
 
 # Copy configs
 ./blow.fish
