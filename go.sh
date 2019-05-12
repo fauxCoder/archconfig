@@ -15,6 +15,7 @@ sudo pacman -S \
     make \
     python \
     rust \
+    rxvt-unicode \
     ttf-inconsolata \
     vim \
     xmonad \
