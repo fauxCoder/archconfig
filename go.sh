@@ -19,7 +19,8 @@ sudo pacman -S \
     vim \
     xmonad \
     xmonad-contrib \
-    xorg-server
+    xorg-server \
+    xorg-xinit
 
 # AUR packages
 package_urls=(\
