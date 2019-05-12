@@ -3,12 +3,16 @@
 # I'm guessing you've got git already.
 
 # Update
-pacman -Syu
+sudo pacman -Syu
 
 # Reqs.
-pacman -S \
+sudo pacman -S \
+    cmake \
+    clang \
     dmenu \
+    fakeroot \
     fish \
+    make \
     python \
     rust \
     ttf-inconsolata \
@@ -34,8 +38,13 @@ popd
 # Copy configs
 ./blow.fish
 
+# Compile xmonad.hs we just copied
+xmonad --recompile
+
 # Install vim plugins
+pushd ~/
 vim +'PlugInstall --sync' +qa
+popd
 
 # YCM install
 pushd ~/.vim/plugged/YouCompleteMe/
