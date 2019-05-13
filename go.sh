@@ -12,9 +12,11 @@ sudo pacman -S \
     dmenu \
     fakeroot \
     fish \
+    fzf \
     make \
     python \
     rust \
+    the_silver_searcher \
     ttf-inconsolata \
     vim \
     xmonad \
