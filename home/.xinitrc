@@ -11,4 +11,7 @@ xsetroot -cursor_name left_ptr &
 # stop screen blanking
 xset s off -dpms &
 
+# select a background
+~/bg/rotate.fish
+
 exec xmonad
