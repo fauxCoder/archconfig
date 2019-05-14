@@ -9,6 +9,7 @@ sudo pacman -S \
     clang \
     dmenu \
     fakeroot \
+    feh \
     fish \
     fzf \
     make \
