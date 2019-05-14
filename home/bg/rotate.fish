@@ -2,4 +2,4 @@
 
 set DIR (cd (dirname (status -f)); and pwd)
 
-nitrogen --head=0 --set-zoom-fill --set-color=#111111 --random $DIR/*_selected
+feh --bg-fill --randomize --no-fehbg $DIR/*_selected
