@@ -21,4 +21,5 @@ sudo pacman -S \
     xmonad \
     xmonad-contrib \
     xorg-server \
-    xorg-xinit
+    xorg-xinit \
+    xorg-xrandr
