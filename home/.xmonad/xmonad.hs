@@ -8,7 +8,7 @@ import qualified Data.Map as M
 
 myTerminal = "urxvt"
 myWorkspaces = ["1","2","3","4","5"]
-mySpacing = spacingRaw True (Border 0 0 0 0) True (Border 4 4 4 4) True
+mySpacing = spacingRaw True (Border 0 0 0 0) True (Border 8 8 8 8) True
 myLayout = smartBorders $ mySpacing $ GridRatio (3/2) ||| Full
 mykeys (XConfig {modMask = modm}) = M.fromList $ [
     ((modm, xK_p), spawn "dmenu_run -fn 'Inconsolata-14'") ]
