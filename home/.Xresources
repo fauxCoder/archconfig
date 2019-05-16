@@ -1,9 +1,11 @@
 Xcursor.theme: neutral
 
-URxvt*font: xft:Inconsolata Nerd Font:size=18
+XTerm.vt100.faceName: Inconsolata Nerd Font:size=16
+
+URxvt*font: xft:Inconsolata Nerd Font:size=16
 URxvt*scrollBar: false
 URxvt*lineSpace: 2
-URxvt*saveLines: 8000
+URxvt*saveLines: 8192
 URxvt*pointerBlank: true
 
 ! Scrolling
