@@ -19,7 +19,6 @@ call plug#end()
 " ale linters
 let g:ale_linters = {
 \   'cpp': ['clangd'],
-\   'python': ['pylint'],
 \}
 
 let g:ale_lint_on_text_changed = 0
