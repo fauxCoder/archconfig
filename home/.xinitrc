@@ -2,6 +2,11 @@
 
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 
+# VirtualBox start guest utils if it exists
+if [ -x "$(command -v VBoxClient-all)" ]; then
+    VBoxClient-all
+fi
+
 # resolution setting
 xrandr --output Virtual-1 --mode 1680x1050 --rate 60
 
