@@ -4,11 +4,12 @@
 sudo pacman -Syu
 
 # Install required packages
-sudo pacman -S \
-    cmake \
+sudo pacman --sync --needed \
     clang \
+    cmake \
     dmenu \
     fakeroot \
+    feh \
     fish \
     fzf \
     make \
@@ -20,4 +21,5 @@ sudo pacman -S \
     xmonad \
     xmonad-contrib \
     xorg-server \
-    xorg-xinit
+    xorg-xinit \
+    xorg-xrandr

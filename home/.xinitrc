@@ -2,6 +2,9 @@
 
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 
+# resolution setting
+xrandr --output Virtual-1 --mode 1680x1050 --rate 60
+
 # dvorak
 setxkbmap -model pc104 -layout us -variant dvorak
 
