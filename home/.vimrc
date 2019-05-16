@@ -16,9 +16,15 @@ Plug 'w0rp/ale'
 
 call plug#end()
 
-" ale linters
+" ale
 let g:ale_linters = {
 \   'cpp': ['clangd'],
+\   'rust': ['cargo'],
+\}
+
+let g:ale_fixers = {
+\   'cpp':  ['trim_whitespace', 'remove_trailing_lines'],
+\   'rust': ['trim_whitespace', 'remove_trailing_lines', 'rustfmt'],
 \}
 
 let g:ale_lint_on_text_changed = 0
@@ -59,3 +65,7 @@ set number
 set tabstop=4
 set shiftwidth=4
 set expandtab
+
+" locale?
+set encoding=utf8
+set fileencoding=utf-8
