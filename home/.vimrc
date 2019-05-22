@@ -66,6 +66,12 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+" Scrolling
+set scrolloff=16
+
 " locale?
 set encoding=utf8
 set fileencoding=utf-8
+
+" mappings
+nnoremap <silent> <C-P> :FZF<Enter>
