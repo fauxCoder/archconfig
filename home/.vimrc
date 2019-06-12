@@ -13,8 +13,12 @@ Plug 'junegunn/fzf.vim'
 Plug 'maximbaz/lightline-ale'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'w0rp/ale'
+Plug 'scrooloose/nerdcommenter'
 
 call plug#end()
+
+" comments
+let g:NERDSpaceDelims = 1
 
 " ale
 let g:ale_linters = {
@@ -22,8 +26,9 @@ let g:ale_linters = {
 \   'rust': ['cargo'],
 \}
 
+let g:ale_c_clangformat_options = '-style=file'
 let g:ale_fixers = {
-\   'cpp':  ['trim_whitespace', 'remove_trailing_lines'],
+\   'cpp':  ['trim_whitespace', 'remove_trailing_lines', 'clang-format'],
 \   'rust': ['trim_whitespace', 'remove_trailing_lines', 'rustfmt'],
 \}
 
