@@ -2,6 +2,7 @@
 
 # AUR packages
 package_urls=(\
+    https://aur.archlinux.org/bear.git \
     https://aur.archlinux.org/nerd-fonts-inconsolata.git \
 )
 
