@@ -10,6 +10,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'itchyny/lightline.vim'
 Plug '/usr/bin/fzf'
 Plug 'junegunn/fzf.vim'
+Plug 'junegunn/goyo.vim'
 Plug 'maximbaz/lightline-ale'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'w0rp/ale'
@@ -72,7 +73,7 @@ set shiftwidth=4
 set expandtab
 
 " Scrolling
-set scrolloff=16
+set scrolloff=8
 
 " locale?
 set encoding=utf8
