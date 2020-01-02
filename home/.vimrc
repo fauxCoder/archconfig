@@ -15,8 +15,12 @@ Plug 'maximbaz/lightline-ale'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'w0rp/ale'
 Plug 'scrooloose/nerdcommenter'
+Plug 'urbit/hoon.vim'
+Plug 'andys8/vim-elm-syntax'
 
 call plug#end()
+
+set nocompatible
 
 " comments
 let g:NERDSpaceDelims = 1
@@ -66,6 +70,7 @@ let g:lightline.active = { 'right': [['linter_checking', 'linter_errors', 'linte
 
 " search folders recursively
 set path+=**
+set wildmenu
 
 set number
 set tabstop=4
@@ -80,4 +85,4 @@ set encoding=utf8
 set fileencoding=utf-8
 
 " mappings
-nnoremap <silent> <C-P> :FZF<Enter>
+nnoremap ,f :find 
